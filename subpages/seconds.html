@@ -1,21 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../reset.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./seconds.css'>
-    <script src='./seconds.js' defer></script>
-</head>
-<body>
-  <div class="clock-container">
-      <div class="clock">
-          <div class="needle second">
-                <div class="dot"></div>
-          </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Clock - Seconds</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mjp0iel.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./seconds.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./navigation.css"
+    />
+    <script src="./seconds.js" defer></script>
+  </head>
+  <body>
+    <div id="num"></div>
+    <div class="clock-container btn">
+      <div class="clock" id="clock">
+        <div class="needle second">
+          <div class="dot"></div>
+        </div>
       </div>
-  </div>
-</body>
+    </div>
+
+    <!--copy to other html-->
+    <a href="../index.html">
+      <div class="title btn">Seconds</div>
+    </a>
+
+    <div class="navigation-container">
+      <div class="navigation">
+        <a href="./hours.html">
+          <div class="btn">Hr</div>
+        </a>
+
+        <div>:</div>
+
+        <a href="./minutes.html">
+          <div class="btn">Min</div>
+        </a>
+
+        <div>:</div>
+
+        <a href="./seconds.html">
+          <div class="btn">Sec</div>
+        </a>
+      </div>
+    </div>
+    <!--copy to other html-->
+  </body>
 </html>

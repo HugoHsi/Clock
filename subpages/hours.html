@@ -3,19 +3,58 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>Clock - Hours</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../reset.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/mjp0iel.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./navigation.css"
+    />
     <link rel='stylesheet' type='text/css' media='screen' href='./hours.css'>
     <script src='./hours.js' defer></script>
 </head>
-<body>
-<div class="container">
+<body onLoad="renderTime();">
+
+<div id="background"></div>
+
+<div class="container" id="brightness">
     <div id=1 class=light></div>
     <div id=2 class=medium></div>
     <div id=3 class=dark></div>
     <div id=4 class=medium></div>
     <div id=5 class=light></div>
+</div>
+
+<div id="semi-white">
+<!--copy to other html-->
+<a href="../index.html">
+    <div class="title btn" id="title-btn">Hours</div>
+  </a>
+
+  <div class="navigation-container">
+    <div class="navigation">
+      <a href="./hours.html">
+        <div class="btn" id="hr-btn">Hr</div>
+      </a>
+
+      <div>:</div>
+
+      <a href="./minutes.html">
+        <div class="btn" id="min-btn">Min</div>
+      </a>
+
+      <div>:</div>
+
+      <a href="./seconds.html">
+        <div class="btn" id="sec-btn">Sec</div>
+      </a>
+    </div>
+  </div>
+  <!--copy to other html-->
+</div>
 </div>
 </body>
 </html>

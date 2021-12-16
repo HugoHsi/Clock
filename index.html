@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./reset.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./main.css'>
-    <script src='./main.js'></script>
-</head>
-<body onLoad="renderTime();">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./reset.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mjp0iel.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+    <script src="./main.js"></script>
+  </head>
+  <body onLoad="renderTime();">
     <div class="container flex">
-    <div id="hrsDisplay" class="container"></div>
-    <div>:</div>
-    <div id="minDisplay" class="container"></div>
-    <div>:</div>
-    <div id="secDisplay" class="container"></div>
+      <a href="./subpages/hours.html">
+        <div id="hrsDisplay" class="container hover"></div>
+      </a>
+      <div>:</div>
+      <a href="./subpages/minutes.html">
+        <div id="minDisplay" class="container hover"></div>
+      </a>
+      <div>:</div>
+      <a href="./subpages/seconds.html">
+        <div id="secDisplay" class="container hover"></div>
+      </a>
     </div>
-</body>
+  </body>
 </html>

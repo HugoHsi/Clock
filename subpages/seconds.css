@@ -1,44 +1,56 @@
-
-
-body{
-  font-family:"Heebo";
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  height:100vh;
+body {
+  font-family: "Heebo";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.clock-container{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  flex-direction:column;
+.clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 300ms ease all;
 }
-.clock{
-  height:500px;
-  width:500px;
-  position:relative;
+.clock {
+  height: 500px;
+  width: 500px;
+  position: relative;
   border: 10px solid black;
-  border-radius:50%;
-}
-.needle{
-  position:absolute;
-  top:50%;
-  left:50%;
-  background:var(--primary-color);
-  transform-origin:bottom center;
+  border-radius: 50%;
+  opacity: 1;
 }
 
-.needle.second{
-  transform:translate(-50%,-100%) rotate(235deg);
-  height:325px;
-  width:1.5px;
-
+.needle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--primary-color);
+  transform-origin: bottom center;
 }
 
+.needle.second {
+  transform: translate(-50%, -100%) rotate(235deg);
+  height: 325px;
+  width: 1.5px;
+}
 
 .dot {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: black;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: black;
+}
+
+#num {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  font-family: kazimirtext, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 200px;
+  opacity: 0;
+  transition: 1000ms ease all;
 }

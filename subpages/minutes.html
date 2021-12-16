@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../reset.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./minutes.css'>
-    <script src='./minutes.js' defer></script>
-</head>
-<body onLoad="refresh();">
-  <div class="container">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Clock - Minute</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../reset.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mjp0iel.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./navigation.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./minutes.css"
+    />
+    <script src="./minutes.js" defer></script>
+  </head>
+  <body onLoad="refresh();">
+    <div class="container">
       <div id="fives"></div>
-     <div id="zero">0</div>
-          <div id="one">1</div>
-          <div id="two">2</div>
-          <div id="three">3</div>
-          <div id="four">4</div>
-  
-  </div>
-</body>
+      <div id="zero" class="rem">0</div>
+      <div id="one" class="rem">1</div>
+      <div id="two" class="rem">2</div>
+      <div id="three" class="rem">3</div>
+      <div id="four" class="rem">4</div>
+
+      <!--copy to other html-->
+      <a href="../index.html">
+        <div class="title btn">Minutes</div>
+      </a>
+
+      <div class="navigation-container">
+        <div class="navigation">
+          <a href="./hours.html">
+            <div class="btn">Hr</div>
+          </a>
+
+          <div>:</div>
+
+          <a href="./minutes.html">
+            <div class="btn">Min</div>
+          </a>
+
+          <div>:</div>
+
+          <a href="./seconds.html">
+            <div class="btn">Sec</div>
+          </a>
+        </div>
+      </div>
+      <!--copy to other html-->
+    </div>
+  </body>
 </html>

@@ -1,4 +1,45 @@
 .container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  font-family: kazimirtext, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 6vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#brightness {
+  color: black;
+}
+
+.dark {
+  opacity: 1;
+}
+
+.medium {
+  opacity: 0.25;
+}
+
+.light {
+  opacity: 0.05;
+}
+
+body {
+  background-color: black;
+}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  z-index: -2;
+  opacity: 1;
+  transition: 360000;
 }
